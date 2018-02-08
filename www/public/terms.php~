@@ -1,0 +1,13 @@
+<?php
+
+	require("../includes/config.php");
+
+	if($_SERVER["REQUEST_METHOD"] == "GET")
+	{
+		render("terms-form.php", ["title" => "Terms & Conditions"]);
+	}
+
+	if($_SERVER["REQUEST_METHOD"] == "POST")
+	{
+		redirect("/index.php");
+	}
